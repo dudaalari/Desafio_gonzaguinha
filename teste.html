@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Completo Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-dark ">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#" style="font-family: 'Quicksand', sans-serif;"><strong>🕊️ Gonzaguinha - O que é O que é?</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active text-white" href="#" ><strong>Introdução</strong></a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#"><strong> Contatos</strong></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="sep"></div>
+
+<!-- Hero com video -->
+<section class="hero-video position-relative overflow-hidden w-100" style="height: 100vh;">
+
+    <video autoplay loop muted playsinline poster="imagem-de-capa.jpg" 
+           class="position-absolute top-0 start-0 w-100 h-100" 
+           style="object-fit: cover; z-index: -1;">
+        <source src="Videos e Imagens/Video_20260320_143228_860_1.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+    </video>
+      <!-- Video do Youtube em loop -->
+     <div class="container h-100 d-flex align-items-center justify-content-center">
+     </div>
+
+</section>
+
+
+
+<!-- SEÇÃO DA MÚSICA COM IMAGENS -->
+<div class="sep"></div>
+
+<section style="background: var(--p100); padding: 5rem 0;">
+    <div class="container">
+
+        <!-- Título da seção -->
+        <p class="text-center mb-2" style="font-size: 0.65rem; letter-spacing: 5px; text-transform: uppercase; color: var(--gold); opacity: 0.8;">∙ a música ∙</p>
+        <h2 class="text-center mb-5" style="font-family: 'Cormorant Garamond', serif; font-weight: 300; color: var(--white); font-size: clamp(2rem, 5vw, 3.5rem);">O que é, <em style="color: var(--p800);">o que é?</em></h2>
+
+        <!-- Bloco 1: imagem esquerda, texto direita -->
+        <div class="row align-items-center mb-5 pb-5" style="border-bottom: 1px solid var(--p400);">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="Imagens/img1.png" class="img-fluid w-100" style="border-radius: 4px; filter: brightness(0.8) saturate(0.6);" alt="Gonzaguinha">
+            </div>
+            <div class="col-md-6 ps-md-5">
+                <p style="font-size: 0.65rem; letter-spacing: 5px; text-transform: uppercase; color: var(--gold); opacity: 0.8; margin-bottom: 1.5rem;">∙ I ∙</p>
+                <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.4rem; line-height: 2; color: var(--p900); font-weight: 300;">
+                    "Eu fico com a pureza<br>
+                    das respostas das crianças<br>
+                    é a vida! É bonita<br>
+                    e é bonita!"
+                </p>
+            </div>
+        </div>
+
+        <!-- Bloco 2: texto esquerda, imagem direita -->
+        <div class="row align-items-center mb-5 pb-5" style="border-bottom: 1px solid var(--p400);">
+            <div class="col-md-6 pe-md-5 order-md-1 order-2 mt-4 mt-md-0">
+                <p style="font-size: 0.65rem; letter-spacing: 5px; text-transform: uppercase; color: var(--gold); opacity: 0.8; margin-bottom: 1.5rem;">∙ II ∙</p>
+                <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.4rem; line-height: 2; color: var(--p900); font-weight: 300;">
+                    "Viver e não ter a vergonha<br>
+                    de ser feliz<br>
+                    cantar e cantar e cantar<br>
+                    a beleza de ser um eterno aprendiz"
+                </p>
+            </div>
+            <div class="col-md-6 order-md-2 order-1">
+                <img src="Imagens/img2.png" class="img-fluid w-100" style="border-radius: 4px; filter: brightness(0.8) saturate(0.6);" alt="A Vida">
+            </div>
+        </div>
+
+        <!-- Bloco 3: imagem esquerda, texto direita -->
+        <div class="row align-items-center mb-5 pb-5" style="border-bottom: 1px solid var(--p400);">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="Imagens/img3.png" class="img-fluid w-100" style="border-radius: 4px; filter: brightness(0.8) saturate(0.6);" alt="É Bonita">
+            </div>
+            <div class="col-md-6 ps-md-5">
+                <p style="font-size: 0.65rem; letter-spacing: 5px; text-transform: uppercase; color: var(--gold); opacity: 0.8; margin-bottom: 1.5rem;">∙ III ∙</p>
+                <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.4rem; line-height: 2; color: var(--p900); font-weight: 300;">
+                    "Ah meu Deus! Eu sei<br>
+                    que a vida devia ser bem melhor<br>
+                    e será<br>
+                    mas isso não impede<br>
+                    que eu repita:"
+                </p>
+            </div>
+        </div>
+
+        <!-- Bloco 4: texto esquerda, imagem direita -->
+        <div class="row align-items-center">
+            <div class="col-md-6 pe-md-5 order-md-1 order-2 mt-4 mt-md-0">
+                <p style="font-size: 0.65rem; letter-spacing: 5px; text-transform: uppercase; color: var(--gold); opacity: 0.8; margin-bottom: 1.5rem;">∙ IV ∙</p>
+                <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.4rem; line-height: 2; color: var(--p900); font-weight: 300;">
+                    "É bonita, é bonita<br>
+                    e é bonita!"
+                </p>
+            </div>
+            <div class="col-md-6 order-md-2 order-1">
+                <img src="Imagens/img4.png" class="img-fluid w-100" style="border-radius: 4px; filter: brightness(0.8) saturate(0.6);" alt="É Bonita">
+            </div>
+        </div>
+
+    </div>
+
+        <!-- CARROUSEL -->
+
+    <div class="container mt-3">
+        <div id="carouselExemplo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Imagens/Alemento.png" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="Imagens/Doce Ilusão.png" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="Imagens/Ela é a batida de um coração.png" class="d-block w-100" alt="Slide 3">
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExemplo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExemplo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="sep"></div>
+
+
+
+        <!-- Formulário -->
+
+ <Aqui está o código do seu footer com o formulário integrado, fundo preto e texto claro para garantir o contraste.
+
+Para que tudo funcione perfeitamente, ajustei as classes para que o formulário fique centralizado e visualmente agradável dentro do rodapé.
+
+Código para adicionar ao final do seu <body>:
+
+<footer class="bg-black text-white pt-5 pb-3 mt-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h4 class="text-center mb-4 border-bottom pb-2"> O que a vida é para você?</h4>
+                
+                <form class="custom-form">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Nome</label>
+                        <input type="email" class="form-control bg-dark text-white border-secondary custom-input" id="email" placeholder="nome@exemplo.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label"O que ela é para você? </label>
+                        <div class="input-group">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="O que a vida é para você?" class="form-label">O que a vida é para você?</label>
+                        <input type="texto" class="form-control bg-dark text-white border-secondary custom-input" id="o que a vida é para você">
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-outline-light w-100 custom-button mb-3">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <hr class="border-secondary">
+        
+        <div class="text-center mt-3">
+            <p class="small mb-0">&copy; 2024 Gonzaguinha Carros de Luxo. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
