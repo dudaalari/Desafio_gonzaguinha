@@ -1,114 +1,219 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carros de Luxo - Bootstrap</title>
+    <title>Gonzaguinha - O que é O que é?</title>
     
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    
     <style>
+        /* Ajustes Globais para o rodapé grudar embaixo */
         body {
-            /* Fundo cinza para o resto do site */
-            background-color: #4a4a4a; 
+            background-color: #605d5b !important; /* Cor cinza do fundo */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            color: white;
         }
-        .navbar-brand {
-            font-family: 'Quicksand', sans-serif;
-            font-weight: bold;
+
+        /* Faz o conteúdo principal esticar */
+        main {
+            flex: 1;
         }
-        /* Ajuste para as imagens do carrosel */
-        .carousel-item img {
-            object-fit: cover;
-            border-radius: 10px;
-            max-height: 500px; /* Mantém uma altura controlada */
+
+        .sep { height: 50px; }
+
+        /* Estilo para as imagens da letra da música */
+        .img-musica {
+            border-radius: 4px; 
+            filter: brightness(0.8) saturate(0.6);
         }
-        .navbar {
-            background-color: #000000 !important; /* Força o preto total na navbar */
+
+        /* Estilo dos textos da música */
+        .letra-musica {
+            font-family: 'Cormorant Garamond', serif; 
+            font-style: italic; 
+            font-size: 1.4rem; 
+            line-height: 2; 
+            font-weight: 300;
+        }
+
+        .label-gold {
+            font-size: 0.65rem; 
+            letter-spacing: 5px; 
+            text-transform: uppercase; 
+            color: #ffd700; 
+            opacity: 0.8;
         }
     </style>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">
-                <i class="bi bi-car-front"></i> Gonzaguinha - Carros de Luxo
+            <a class="navbar-brand text-white" href="#" style="font-family: 'Quicksand', sans-serif;">
+                <strong>🕊️ Gonzaguinha - O que é O que é?</strong>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#"><strong>Introdução</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><strong>Produtos</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><strong>Contatos</strong></a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active text-white" href="#"><strong>Introdução</strong></a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#"><strong>Contatos</strong></a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container mt-4 text-center">
-        <h1 class="text-white mb-4">Carros de Luxo</h1>
+    <main>
+        
+        <section class="hero-video position-relative overflow-hidden w-100" style="height: 100vh;">
+            <video autoplay loop muted playsinline class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; z-index: -1;">
+                <source src="Videos e Imagens/Video_20260320_143228_860_1.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+            <div class="container h-100 d-flex align-items-center justify-content-center"></div>
+        </section>
 
-        <div class="row justify-content-center">
-            <div class="col-md-10">
-                <div id="carouselCarros" class="carousel slide shadow-lg" data-bs-ride="carousel">
-                    <div class="carousel-inner bg-dark p-4 rounded">
-                        
-                        <div class="carousel-item active text-white">
-                            <h3>Mercedes-Benz AMG Vision GT</h3>
-                            <p>Preço: R$ 1.735.900 | V8 biturbo 585 CV</p>
-                            <img src="mercedes.jpg" class="d-block w-100" alt="Mercedes">
-                        </div>
+        <div class="sep"></div>
 
-                        <div class="carousel-item text-white">
-                            <h3>Devel Sixteen</h3>
-                            <p>US$ 2,2 milhões | 5.007 cavalos | 560 km/h</p>
-                            <img src="devel.jpg" class="d-block w-100" alt="Devel">
-                        </div>
+        <section class="py-5">
+            <div class="container">
+                <p class="text-center mb-2 text-warning">∙ a música ∙</p>
+                <h2 class="text-center mb-5 display-4" style="font-family: 'Cormorant Garamond', serif;">O que é, <em class="text-black">o que é?</em></h2>
 
-                        <div class="carousel-item text-white">
-                            <h3>Koenigsegg Regera</h3>
-                            <p>R$ 8 milhões | 5.0 L twin turbo V8 | 410 km/h</p>
-                            <img src="koenigsegg.jpg" class="d-block w-100" alt="Koenigsegg">
-                        </div>
-
+                <div class="row align-items-center mb-5 pb-5 border-bottom border-secondary">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <img src="Imagens/img1.png" class="img-fluid w-100 img-musica" alt="Gonzaguinha">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCarros" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCarros" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
+                    <div class="col-md-6 ps-md-5">
+                        <p class="label-gold mb-3">∙ I ∙</p>
+                        <p class="letra-musica">
+                            "Eu fico com a pureza<br>das respostas das crianças<br>é a vida! É bonita<br>e é bonita!"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-5 pb-5 border-bottom border-secondary">
+                    <div class="col-md-6 pe-md-5 order-md-1 order-2 mt-4 mt-md-0">
+                        <p class="label-gold mb-3">∙ II ∙</p>
+                        <p class="letra-musica">
+                            "Viver e não ter a vergonha<br>de ser feliz<br>cantar e cantar e cantar<br>a beleza de ser um eterno aprendiz"
+                        </p>
+                    </div>
+                    <div class="col-md-6 order-md-2 order-1">
+                        <img src="Imagens/img2.png" class="img-fluid w-100 img-musica" alt="A Vida">
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-5 pb-5 border-bottom border-secondary">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <img src="Imagens/img3.png" class="img-fluid w-100 img-musica" alt="É Bonita">
+                    </div>
+                    <div class="col-md-6 ps-md-5">
+                        <p class="label-gold mb-3">∙ III ∙</p>
+                        <p class="letra-musica">
+                            "Ah meu Deus! Eu sei<br>que a vida devia ser bem melhor<br>e será<br>mas isso não impede<br>que eu repita:"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6 pe-md-5 order-md-1 order-2 mt-4 mt-md-0">
+                        <p class="label-gold mb-3">∙ IV ∙</p>
+                        <p class="letra-musica">
+                            "É bonita, é bonita<br>e é bonita!"
+                        </p>
+                    </div>
+                    <div class="col-md-6 order-md-2 order-1">
+                        <img src="Imagens/img4.png" class="img-fluid w-100 img-musica" alt="É Bonita">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container mb-5">
+            <div id="carouselExemplo" class="carousel slide shadow" data-bs-ride="carousel">
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <img src="Imagens/Alemento.png" class="d-block w-100" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagens/Doce Ilusão.png" class="d-block w-100" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagens/Ela é a batida de um coração.png" class="d-block w-100" alt="Slide 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExemplo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExemplo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Footer Frase -->
+         <footer class="bg-black text-white pt-5 pb-3 mt-auto">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h4 class="text-center mb-4 border-bottom pb-2">O que a vida é para você?</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Nome</label>
+                            <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">O que a vida é para você?</label>
+                            <textarea class="form-control bg-dark text-white border-secondary" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-light w-100 mb-3">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            
+        <div class="container-fluid bg-black py-5 px-0">
+            <div class="row g-0 justify-content-center align-items-center" style="min-height: 250px; border-top: 1px solid #222; border-bottom: 1px solid #222;">
+                <div class="col-11 col-md-8 text-center">
+                    <div class="mb-3"><i class="bi bi-quote fs-1 text-secondary opacity-50"></i></div>
+                    <h2 class="display-6 fw-light mb-4" style="font-family: 'Cormorant Garamond', serif; font-style: italic;">
+                        "Viver e não ter a vergonha de ser feliz."
+                    </h2>
+                    <p class="text-secondary small text-uppercase" style="letter-spacing: 5px;">Gonzaguinha</p>
                 </div>
             </div>
         </div>
 
-        <div class="row justify-content-center mt-5 mb-5">
-            <div class="col-md-6 bg-light p-4 rounded shadow">
-                <h4 class="mb-3">Entre em Contato</h4>
-                <form>
-                    <div class="mb-3 text-start">
-                        <label class="form-label">Email</label>
-                        <input type="email" class="form-control" placeholder="seu@email.com">
-                    </div>
-                    <div class="mb-3 text-start">
-                        <label class="form-label">Mensagem de interesse</label>
-                        <textarea class="form-control" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-dark w-100">Enviar Interesse</button>
-                </form>
+    </main>
+ 
+
+            <br> <br>
+            
+            <hr class="border-secondary mt-4">
+            <div class="text-center">
+                <p class="small text-black mb-0">&copy; 2026 Eterno Gonzaguinha . Todos os direitos reservados.</p>
             </div>
         </div>
-    </div>
+    </footer>
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var meuCarrossel = document.querySelector('#carouselExemplo');
+            var instance = new bootstrap.Carousel(meuCarrossel, {
+                interval: 3000,
+                ride: 'carousel',
+                pause: false
+            });
+            instance.cycle();
+        });
+    </script>
 </body>
 </html>
